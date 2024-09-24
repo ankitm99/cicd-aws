@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
       - mvn clean install
+      - ls -l target
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=408367336678.dkr.ecr.ap-southeast-2.amazonaws.com/demo-registry
